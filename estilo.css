@@ -1,0 +1,71 @@
+/* Asignamos una fuente a todo el cuerpo */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Fira Sans", sans-serif; /* Aplica la fuente a todo el cuerpo */
+    font-style: italic; /* Hace que el texto aparezca en cursiva */
+    background-color: #f5f5f5; /*Establece un fondo de gris claro*/
+}
+/* Aquí es header que contiene el navegador lateral */
+.navegador {
+    background-color: #f5f5f5; /*Establece fondo gris claro para el navegador*/
+    padding: 10px; /* Espaciado interno para separar elementos */
+    display: flex; /* Usa flexbox para organizar elementos */
+    justify-content: center; /*Centra los elementos dentro de la página*/
+}
+
+.navegador ul {
+    list-style-type: none; /*Elimina los puntos del navegador*/
+    margin: 0; /*Elimina márgenes exteriores*/
+    padding: 0; /*Elimina espacios internos*/
+    display: flex; /* Usa flexbox para organizar las secciones */
+}
+
+.navegador ul li a {
+    color: #696969; /*Establece un color para los enlaces*/
+    text-decoration: none; /*Elimina el susbrayado de los enlaces*/
+    padding: 8px 16px; /*Añade espaciado alrededor del texto*/
+}
+
+.navegador ul li a:hover {
+    background-color: #deb887; /*Cambia el fondo al pasar el cursor sobre el enlace*/
+    color: #634291; /*Cambia el color al pasar el cursor sobre el enlace*/
+}
+
+/*A partir de aquí es la parte principal (main) */
+
+.contenido {
+    width: 80%; /* Ocupa el 80% del ancho de la página */
+    display: flex; /*Usa flexbox para organizar los elementos*/
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /*Centra horizontalmente el contenido*/
+    align-items: center; /*Centra horizontalmente el contenido*/
+    margin: auto; /*Centra el contenido en la pantalla*/
+    min-height: 85vh; /*Hace que ocupe al menos el 85% de la altura de la página*/
+
+}
+
+.seccionArriba, .seccionAbajo {
+    display: flex; /* Usa flexbox para organizar las secciones */
+    justify-content: space-between; /*Distribuye los elementos con espacios entre ellos*/
+    width: 100%; /*Ocupa todo el ancho disponible*/
+}
+
+.imagenes {
+    background: #99CCFF; /*Establece el fondo de un color en el bloque de la imagen*/
+    padding: 15px; /*Espacio interno alrededor del contenido*/
+    margin: 10px; /*Margen externo para separar los elementos*/
+    text-align: center; /*Centra el texto dentro del contenedor*/
+    flex: 1; /*Permite que las imagenes ocupen el mismo espacio*/
+    border-radius: 10px; /*Hace que los bordes sean redondeados*/
+    border: 1px solid #ccc; /*Realiza bordes de un color*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Agrega una sombra alrededor de los bloques*/
+}
+
+.imagenes > img {
+    height: 250px; /*Establece una altura fija para las imágenes*/
+}
+
+footer > small {
+    display: flex; /*Usa flexbox para organizar el pie de la pagina*/
+    justify-content: flex-end; /*Alinea el texto a la derecha*/
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Aquí es el menú de navegación lateral -->
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./menu/soporte tecnico/soporte-tecnico.html">Soporte técnico</a></li>
+                    <li><a href="./menu/seguridad informatica/seguridad.html">Seguridad informática</a></li>
+                    <li><a href="./menu/mantenimiento redes/mantenimiento-redes.html">Mantenimiento de redes</a></li>
+                    <li><a href="./menu/consultoria informatica/consultoria.html">Consultoría informática</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!--A partir de aquí es el contenido principal en el que hay un formulario en el cual todos los campos deberán ser rellenos -->
+    <main>
+        <p>Rellena el siguiente formularios con los siguientes datos para poder contactarte:</p>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <!--Aquí es el pie de página-->
+    <footer>
+        <small>&copy; 2025 Ismael Cuesta Gordillo</small>
+    </footer>
+</body>
+</html>
